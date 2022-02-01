@@ -16,7 +16,9 @@ def getFrequency(word):
 # for printing pretty, accepts a relative frequency data type
 def print_row(relativeFreqency):
     for key in relativeFreqency:
-        print(key ,': ',relativeFreqency[key])
+        print( 'character: ',key ,'| ',
+                'frequency: ', relativeFreqency[key],
+                '| ', 'ascii: ', ord(key))
 
     
 print_row(getFrequency(word))
